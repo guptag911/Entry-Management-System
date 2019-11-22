@@ -8,9 +8,20 @@ We need an application, which can capture the Name, email address, phone no of t
 5. Host name
 6. Address visited.
 
-### Pre-Requisite's
+### Language and API used
+1. Python
+2. Tkinter for GUI
+3. Twilio for SMS services
+4. SMTP for email services
+
+### API Requirements
 1. MySql
 2. Python 3.6
+
+### Extra Requirements
+1. Gmail Account
+2. Twilio Account
+
 
 ### Software in Action
 
@@ -21,3 +32,9 @@ Check-Out screen where visitor can Check-out
 ![Check-Out Screen of the Software](https://github.com/theannoying/Entry-Management-System/blob/master/images/Check-out.PNG)
 
 ### Video
+
+
+### How the application works?
+
+This application is coded in Python 3.6 and GUI is implemented using tkinter.For SMS system twilio API is used and for email SMTP service is used.When visitor arrives ,he/she enters the details of the host as well of themselves.If the details are correct , the host receives a sms and email stating visitor's name and his contact number.MySQl is used to store the data with chech-in time as the current timestamp as check-in time.If same visitor details are given again before check-out a popup is displayed.Even if the user enters wrong details a popup is displayed stating the same.During checkout the visitor check-out time is updated with current timestamp and the visitor gets an sms stating all the details along with check-in and check-out time.Exception handling is used to handle the exception and errors.
+The tester should have a twilio account for using this application along with a gmail ID.
