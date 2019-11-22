@@ -8,4 +8,10 @@ We need an application, which can capture the Name, email address, phone no of t
 5. Host name
 6. Address visited.
 
-![image](https://github.com/theannoying/Entry-Management-System/blob/master/inn.png)
+#Pre-Requisite's
+1. MySql
+2. Python 3.6
+
+#Software in Action
+Start Screen of the Software
+![image](https://github.com/theannoying/Entry-Management-System/blob/master/images/startScreen.PNG)
