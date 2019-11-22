@@ -14,4 +14,10 @@ We need an application, which can capture the Name, email address, phone no of t
 
 ### Software in Action
 
+Start Screen of the Application where Visitor can check in
 ![Start Screen of the Software](https://github.com/theannoying/Entry-Management-System/blob/master/images/startScreen.PNG)
+
+Check-Out screen where visitor can Check-out
+![Check-Out Screen of the Software](https://github.com/theannoying/Entry-Management-System/blob/master/images/Check-out.PNG)
+
+### Video
