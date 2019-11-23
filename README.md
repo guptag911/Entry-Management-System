@@ -39,25 +39,6 @@ Check-Out screen where visitor can Check-out
 ![Check-Out Screen of the Software](https://github.com/theannoying/Entry-Management-System/blob/master/images/Check-out.PNG)
 
 
-When user details are valid and saved sucessfully!
-![Saved Details](https://github.com/theannoying/Entry-Management-System/blob/master/images/saved%20details.PNG)
-
-
-SMS received by the host when visitor checked in
-![SMS received by host](https://github.com/theannoying/Entry-Management-System/blob/master/images/sms-received-by-visitor.png)
-
-Mail received by the host when visitor checked In
-![Mail received by host](https://github.com/theannoying/Entry-Management-System/blob/master/images/mail%20received%20to%20host%20when%20visitor%20checked%20in.jpg)
-
-
-When user Check-Out
-![When visitor checks out](https://github.com/theannoying/Entry-Management-System/blob/master/images/popup%20after%20checkout.PNG)
-
-
-
-Mail Received by visitor after check-out
-![Receved mail by visitor after check-out](https://github.com/theannoying/Entry-Management-System/blob/master/images/mail%20received%20after%20checkout.jpg)
-
 ### How the application works?
 
 This application is coded in Python 3.6 and GUI is implemented using tkinter.For SMS system twilio API is used and for email SMTP service is used.When visitor arrives ,he/she enters the details of the host as well of themselves.If the details are correct , the host receives a sms and email stating visitor's name and his contact number.MySQl is used to store the data with chech-in time as the current timestamp.If same visitor details are given again before check-out a popup is displayed.Even if the user enters wrong details a popup is displayed stating the same.During checkout the visitor check-out time is updated with current timestamp and the visitor gets an email stating all the details along with check-in and check-out time.Exception handling is used to handle the exception and errors.
