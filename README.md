@@ -32,7 +32,7 @@ Check-Out screen where visitor can Check-out
 ![Check-Out Screen of the Software](https://github.com/theannoying/Entry-Management-System/blob/master/images/Check-out.PNG)
 
 ### Video
-
+[![Watch the video](https://github.com/theannoying/Entry-Management-System/blob/master/images/startScreen.PNG)](https://github.com/theannoying/Entry-Management-System/blob/master/Video%20of%20running%20software.mp4)
 
 ### How the application works?
 
