@@ -1,0 +1,6 @@
+python==3.6
+twilio
+mysql-connector-python
+smtplib
+Pillow
+tkinter
