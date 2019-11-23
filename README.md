@@ -27,7 +27,7 @@ We need an application, which can capture the Name, email address, phone no of t
 2. open cmd and navigate to the download folder where repository is downloaded
 3. Execute "python -m pip install -r requirements.txt"
 
-Caution::Install python3.6 and check to add path to path variables.Ensure pip is installed on your system.
+Caution::Install python3.6 and check "add path to path variables" during installation.Ensure pip is installed on your system.
 
 ### Software in Action
 
