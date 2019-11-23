@@ -46,7 +46,6 @@ SMS received by the host when visitor checked in
 ![SMS received by host](https://github.com/theannoying/Entry-Management-System/blob/master/images/sms-received-by-visitor.png)
 
 Mail received by the host when visitor checked In
-
 ![Mail received by host](https://github.com/theannoying/Entry-Management-System/blob/master/images/mail%20received%20to%20host%20when%20visitor%20checked%20in.jpg)
 
 
