@@ -34,8 +34,13 @@ Caution::Install python3.6 and check to add path to path variables.Ensure pip is
 Start Screen of the Application where Visitor can check in
 ![Start Screen of the Software](https://github.com/theannoying/Entry-Management-System/blob/master/images/startScreen.PNG)
 
+
 Check-Out screen where visitor can Check-out
 ![Check-Out Screen of the Software](https://github.com/theannoying/Entry-Management-System/blob/master/images/Check-out.PNG)
+
+
+When user details are valid and saved sucessfully!
+![Saved Details](https://github.com/theannoying/Entry-Management-System/blob/master/images/saved%20details.PNG)
 
 
 ### How the application works?
