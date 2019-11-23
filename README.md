@@ -42,11 +42,9 @@ Check-Out screen where visitor can Check-out
 When user details are valid and saved sucessfully!
 ![Saved Details](https://github.com/theannoying/Entry-Management-System/blob/master/images/saved%20details.PNG)
 
+
 SMS received by the host when visitor checked in
 ![SMS received by host](https://github.com/theannoying/Entry-Management-System/blob/master/images/sms-received-by-visitor.png)
-
-Mail received by the host when visitor checked In
-![Mail received by host](https://github.com/theannoying/Entry-Management-System/blob/master/images/mail%20received%20to%20host%20when%20visitor%20checked%20in.jpg)
 
 
 When user Check-Out
