@@ -6,6 +6,16 @@ import tkinter.messagebox
 from PIL import ImageTk, Image
 
 
+### PLEASE FILL THESE DETAILS TO RUN THE SOFTWARE ON YOUR SYSTEM
+GmailID="Your Gmail ID"
+password="Your Gmail Password"
+acc_ID= "Your Account SID from twilio.com/console"
+aut_token="Your Auth Token from twilio.com/console"
+number="YOur Twilio number"
+username="YOur MYSQL username generally root"
+sqlpass="Your MYSQL password"
+
+
 ##Popup message when user's information has been stored during check-in time!!
 def popup1():
     tk.messagebox.showinfo("SAVED", "Your information has been stored!")
@@ -37,7 +47,7 @@ def send_email(mail1, name, mail2, number):
     server = smtplib.SMTP('smtp.gmail.com:587')
     server.ehlo()
     server.starttls()
-    server.login('abhay.gupta220@gmail.com', 'itsmystyle')
+    server.login(GmailID, password)
     msg = name + " is coming to meet you and visitor's Contact Number is " + number
     server.sendmail(mail1, mail2, msg)
 
@@ -46,7 +56,7 @@ def send_email_checkout(mail1):
     server = smtplib.SMTP('smtp.gmail.com:587')
     server.ehlo()
     server.starttls()
-    server.login('abhay.gupta220@gmail.com', 'itsmystyle')
+    server.login(GmailID, password)
     msg = "Here are the details of your meeting.\n"
     cursor3 = mydb.cursor()
     sql = "SELECT Vis_Name FROM INFORMATION WHERE Vis_mail=%s"
@@ -114,15 +124,15 @@ def get_data(a, b, c, d, e, f):
 ##Function to sand SMS using Twilio
 def send_sms(number2, name, number1):
     # Your Account SID from twilio.com/console
-    account_sid = "ACac3528166131ca5132d59da7d0b11f98"
+    account_sid = str(acc_ID)
     # Your Auth Token from twilio.com/console
-    auth_token = "b4f1e444c99c3305da828cb67db7b575"
+    auth_token = str(aut_token)
 
     client = Client(account_sid, auth_token)
 
     message = client.messages.create(
         to="+91" + number2,
-        from_="+12052738861",
+        from_=str(number),
         body=name + " is coming to meet you and visitor's Contact Number is " + number1)
 
 ##Function to gather the visitor that haven't checked out yet and update his checkout time
@@ -138,7 +148,7 @@ def check_out(mk):
     except:
         popup3()
 
-mydb = mysql.connector.connect(host="localhost", user="abhay", passwd="2486")
+mydb = mysql.connector.connect(host="localhost", user=str(username), passwd=str(sqlpass))
 cursor = mydb.cursor()
 
 try:
