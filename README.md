@@ -38,6 +38,8 @@ Start Screen of the Application where Visitor can check in
 Check-Out screen where visitor can Check-out
 ![Check-Out Screen of the Software](https://github.com/theannoying/Entry-Management-System/blob/master/images/Check-out.PNG)
 
+## Video of working software
+![Video Tutorial](https://youtu.be/xIBzrxQ4Xgo)
 
 ### How the application works?
 
