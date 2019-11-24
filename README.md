@@ -30,7 +30,9 @@ We need an application, which can capture the Name, email address, phone no of t
 Caution::Install python3.6 and check "add path to path variables" during installation.Ensure pip is installed on your system.
 
 ### Software in Action
+[Watch the video here](https://youtu.be/xIBzrxQ4Xgo)
 
+### Some Images of GUI
 Start Screen of the Application where Visitor can check in
 ![Start Screen of the Software](https://github.com/theannoying/Entry-Management-System/blob/master/images/startScreen.PNG)
 
@@ -38,8 +40,6 @@ Start Screen of the Application where Visitor can check in
 Check-Out screen where visitor can Check-out
 ![Check-Out Screen of the Software](https://github.com/theannoying/Entry-Management-System/blob/master/images/Check-out.PNG)
 
-## Video of working software
-[Watch the video here](https://youtu.be/xIBzrxQ4Xgo)
 
 ### How the application works?
 
