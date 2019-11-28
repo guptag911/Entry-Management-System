@@ -167,7 +167,7 @@ class EntryManger(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
         self.geometry('500x500')
-        self.iconbitmap('inno.ico')
+        self.iconbitmap('soft_icon.ico')
         self.resizable(0,0)             #Disable Maximize Button
         self.config(bg='white')
         self.title("Entry Management Application")
