@@ -4,16 +4,19 @@ import tkinter as tk
 import smtplib
 import tkinter.messagebox
 from PIL import ImageTk, Image
+import os
 
+
+BASE_DIR = os.getcwd()
 
 ### PLEASE FILL THESE DETAILS TO RUN THE SOFTWARE ON YOUR SYSTEM
-GmailID="Your Gmail ID"
-password="Your Gmail Password"
+GmailID="abhay.gupta220@gmail.com"
+password="Abhay.220"
 acc_ID= "Your Account SID from twilio.com/console"
 aut_token="Your Auth Token from twilio.com/console"
 number="YOur Twilio number"
-username="YOur MYSQL username generally root"
-sqlpass="Your MYSQL password"
+username="root"
+sqlpass="Abhay.220"
 
 
 ##Popup message when user's information has been stored during check-in time!!
@@ -114,7 +117,7 @@ def get_data(a, b, c, d, e, f):
 
     try:
 
-        send_sms(Phone_host, Name_vis, Phone_vis)
+        #send_sms(Phone_host, Name_vis, Phone_vis)
         send_email(Mail_vis, Name_vis, Mail_host, Phone_vis)
         save_query(Name_vis, Mail_vis, Phone_vis, Name_host, Mail_host, Phone_host)
         popup1()
@@ -167,7 +170,8 @@ class EntryManger(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
         self.geometry('500x500')
-        self.iconbitmap('soft_icon.ico')
+        #self.iconphoto(tk.PhotoImage(False, file = os.path.join(BASE_DIR,"icon.ico")))
+        #self.iconbitmap(os.path.join(BASE_DIR,"icon.ico"))
         self.resizable(0,0)             #Disable Maximize Button
         self.config(bg='white')
         self.title("Entry Management Application")
@@ -218,7 +222,7 @@ class PageOne(tk.Frame):
         tk.Button(self, text="Check-In", command=lambda: get_data(e1, e2, e3, e4, e5, e6), activebackground='orange', bd=3, width=10, height=2).place(x=180, y=230)
         tk.Button(self, text="Go to Check-Out", command=lambda: master.switch_frame(PageTwo), activebackground='orange', bd=3, width=14, height=2, ).place(x=300, y=230)
 
-        load = Image.open("background.png")
+        load = Image.open(os.path.join(BASE_DIR,"background.png"))
         render = ImageTk.PhotoImage(load)
         img = tk.Label(self, image=render)
         img.image = render
@@ -238,7 +242,7 @@ class PageTwo(tk.Frame):
         b2 = tk.Button(self, text="Go Back", command=lambda: master.switch_frame(PageOne), activebackground='orange', bd=3,width=8, height=2)
         b2.place(x=200, y=82)
 
-        load = Image.open("backgroud.png")
+        load = Image.open(os.path.join(BASE_DIR,"background.png"))
         render = ImageTk.PhotoImage(load)
         img = tk.Label(self, image=render)
         img.image = render
