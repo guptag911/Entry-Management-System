@@ -5,19 +5,9 @@ import smtplib
 import tkinter.messagebox
 from PIL import ImageTk, Image
 import os
-
+from config import GmailID, password, acc_ID, aut_token, number, username, sqlpass
 
 BASE_DIR = os.getcwd()
-
-### PLEASE FILL THESE DETAILS TO RUN THE SOFTWARE ON YOUR SYSTEM
-GmailID="abhay.gupta220@gmail.com"
-password="Abhay.220"
-acc_ID= "Your Account SID from twilio.com/console"
-aut_token="Your Auth Token from twilio.com/console"
-number="YOur Twilio number"
-username="root"
-sqlpass="Abhay.220"
-
 
 ##Popup message when user's information has been stored during check-in time!!
 def popup1():
